@@ -17,6 +17,11 @@ import 'vue3-toastify/dist/index.css';
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
+// Importar Pinia
+import { createPinia } from 'pinia';
+const pinia = createPinia();
+
+
 // Crear la instancia de Vuetify
 const vuetify = createVuetify({
   components,
@@ -35,6 +40,7 @@ const app = createApp(App)
 
 app.use(Toast);
 app.use(router);
-app.use(vuetify)
+app.use(vuetify);
+app.use(pinia);
 
 app.mount('#app')

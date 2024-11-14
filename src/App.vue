@@ -31,7 +31,7 @@ const items = ref(
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="home"></v-list-item>
+          <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="core"></v-list-item>
           <v-list-item prepend-icon="mdi-forum" title="Comunidad" value="about"></v-list-item>
         </v-list>
       </v-navigation-drawer>
@@ -156,7 +156,7 @@ const items = ref(
         <span>Roadmap</span>
       </v-btn>
 
-      <v-btn value="favorites" :to="{ name: 'home' }">
+      <v-btn value="favorites" :to="{ name: 'core' }">
         <v-icon>mdi-home</v-icon>
 
         <span>Dashboard</span>

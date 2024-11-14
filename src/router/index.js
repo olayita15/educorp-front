@@ -1,12 +1,12 @@
 import { createMemoryHistory, createRouter } from 'vue-router';
 
-import homeRouter from "../modules/home/router";
+import coreRouter from "../modules/core/router";
 import hackatonRouter from "../modules/hackaton/router";
 import roadmapRouter from "../modules/roadmap/router";
 
 const routes = [
   {
-    ...homeRouter
+    ...coreRouter
   },
   {
     ...hackatonRouter
